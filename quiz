@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+   </head>
+   <body>
+    <center>
+    var name = prompt("Siapa namamu?");
+var score = 0;
+
+var question1 = prompt("Apakah " + name + " selalu memikirkan pasangan " + name + " sepanjang hari?");
+if (question1.toLowerCase() === "ya") {
+  score++;
+}
+
+var question2 = prompt("Apakah " + name + " selalu membuat waktu untuk pasangan " + name + "?");
+if (question2.toLowerCase() === "ya") {
+  score++;
+}
+
+var question3 = prompt("Apakah " + name + " selalu memperlakukan pasangan " + name + " dengan baik?");
+if (question3.toLowerCase() === "ya") {
+  score++;
+}
+
+var question4 = prompt("Apakah " + name + " selalu memberikan kejutan untuk pasangan " + name + "?");
+if (question4.toLowerCase() === "ya") {
+  score++;
+}
+
+var result;
+if (score === 4) {
+  result = name + ", Anda sangat sayang pada pasangan Anda.";
+} else if (score === 3) {
+  result = name + ", Anda cukup sayang pada pasangan Anda.";
+} else if (score === 2) {
+  result = name + ", Anda sedang-sedang saja sayang pada pasangan Anda.";
+} else if (score === 1) {
+  result = name + ", Anda sedikit sayang pada pasangan Anda.";
+} else {
+  result = name + ", Anda tidak sayang pada pasangan Anda.";
+}
+
+console.log(result + " " + "\"Cinta tidak harus memiliki, tapi harus memiliki keberanian untuk memberikan.\"");
+    </center>
+  </body>
+</html>
